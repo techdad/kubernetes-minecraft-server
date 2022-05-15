@@ -4,23 +4,23 @@
 
 # ********REQUIRED********
 node:
-  hostname: 'dell3' # Your kube node's hostname
+  hostname: 'mk8s01' # Your kube node's hostname
 # ************************
 
 minecraft:
-  gamemode: 'survival'
-  motd: 'Your super-cool, super-kube, minecraft server' # Message of the Day
+  gamemode: 'creative'
+  motd: 'Just another Minecraft Server' # Message of the Day
   port: 25565
 
 volume:
-  storage: 3Gi
-  path: '/mnt/local-volumes/minecraft' # Path to wherever you want to save your worldfile
+  storage: 10Gi
+  path: '/home/ubuntu/minecraft-data' # Path to wherever you want to save your worldfile
 
 resources:
   limits:
-    memory: 2Gi
+    memory: 8Gi
   requests:
-    memory: 1.5Gi
+    memory: 6Gi
 
 serviceAccount:
   create: true

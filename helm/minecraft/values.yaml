@@ -4,7 +4,7 @@
 
 # ********REQUIRED********
 node:
-  hostname: 'mk8s01' # Your kube node's hostname
+  hostname: 'k3s01' # Your kube node's hostname
 # ************************
 
 minecraft:

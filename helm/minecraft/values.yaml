@@ -12,6 +12,7 @@ minecraft:
   motd: 'Just another Minecraft Server' # Message of the Day
   port: 25565
   node_port: 30565
+  whitelist: 'MarioCraft3000'
 
 volume:
   storage: 10Gi

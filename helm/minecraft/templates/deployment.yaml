@@ -36,6 +36,10 @@ spec:
             value: {{ .Values.minecraft.motd }}
           - name: ALLOW_FLIGHT
             value: 'TRUE'
+          - name: ENFORCE_WHITELIST
+            value: 'TRUE'
+          - name: WHITELIST
+            value: {{ .Values.minecraft.whitelist }}
         ports:
         - containerPort: {{ .Values.minecraft.port }}
           name: minecraft

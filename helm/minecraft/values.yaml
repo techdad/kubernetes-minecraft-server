@@ -11,7 +11,7 @@ minecraft:
   gamemode: 'creative'
   motd: 'Just another Minecraft Server' # Message of the Day
   port: 25565
-  node-port: 30565
+  node_port: 30565
 
 volume:
   storage: 10Gi

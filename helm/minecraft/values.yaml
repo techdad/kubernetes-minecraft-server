@@ -9,10 +9,11 @@ node:
 
 minecraft:
   gamemode: 'creative'
-  motd: 'Just another Minecraft Server' # Message of the Day
+  motd: 'Just another §l§cMinecraft§r Server' # Message of the Day
   port: 25565
   node_port: 30565
   whitelist: 'MarioCraft3000,MarioCraft5000,LouCraft2014'
+  difficulty: 'easy'
 
 volume:
   storage: 10Gi
@@ -20,9 +21,9 @@ volume:
 
 resources:
   limits:
-    memory: 8Gi
-  requests:
     memory: 6Gi
+  requests:
+    memory: 4Gi
 
 serviceAccount:
   create: true

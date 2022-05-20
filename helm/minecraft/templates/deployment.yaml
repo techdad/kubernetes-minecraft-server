@@ -28,6 +28,8 @@ spec:
           requests:
             memory: {{ .Values.resources.requests.memory }}
         env:
+          - name: MEMORY
+            value: '2G'
           - name:  EULA
             value: 'TRUE'
           - name: MODE
@@ -36,10 +38,12 @@ spec:
             value: {{ .Values.minecraft.motd }}
           - name: ENFORCE_WHITELIST
             value: 'TRUE'
+          - name: OVERRIDE_WHITELIST
+            value: 'TRUE'
           - name: WHITELIST
             value: {{ .Values.minecraft.whitelist }}
           - name: DIFFICULTY
-            value: 'easy'
+            value: {{ .Values.minecraft.difficulty }}
           - name: ALLOW_FLIGHT
             value: 'TRUE'
           - name: ENABLE_COMMAND_BLOCK

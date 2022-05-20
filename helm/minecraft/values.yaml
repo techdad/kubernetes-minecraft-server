@@ -12,7 +12,7 @@ minecraft:
   motd: 'Just another §l§cMinecraft§r Server' # Message of the Day
   port: 25565
   node_port: 30565
-  whitelist: 'MarioCraft3000,MarioCraft5000,LouCraft2014'
+  whitelist: 'MarioCraft3000,MarioCraft5000,LouCraft2014,TechDadXYZ'
   difficulty: 'easy'
 
 volume:

@@ -34,12 +34,24 @@ spec:
             value: {{ .Values.minecraft.gamemode }}
           - name: MOTD
             value: {{ .Values.minecraft.motd }}
-          - name: ALLOW_FLIGHT
-            value: 'TRUE'
           - name: ENFORCE_WHITELIST
             value: 'TRUE'
           - name: WHITELIST
             value: {{ .Values.minecraft.whitelist }}
+          - name: DIFFICULTY
+            value: 'easy'
+          - name: ALLOW_FLIGHT
+            value: 'TRUE'
+          - name: ENABLE_COMMAND_BLOCK
+            value: 'TRUE'
+          - name: GENERATE_STRUCTURES
+            value: 'TRUE'
+          - name: SPAWN_ANIMALS
+            value: 'TRUE'
+          - name: SPAWN_MONSTERS
+            value: 'TRUE'
+          - name: SPAWN_NPCS
+            value: 'TRUE'
         ports:
         - containerPort: {{ .Values.minecraft.port }}
           name: minecraft

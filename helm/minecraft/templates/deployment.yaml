@@ -30,9 +30,9 @@ spec:
         env:
           - name: MEMORY
             value: '2G'
-          -name: UID
+          - name: UID
             value: 1001
-          -name: GID
+          - name: GID
             value: 1001
           - name:  EULA
             value: 'TRUE'

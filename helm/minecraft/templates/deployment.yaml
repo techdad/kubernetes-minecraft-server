@@ -29,11 +29,11 @@ spec:
             memory: {{ .Values.resources.requests.memory }}
         env:
           - name: MEMORY
-            value: {{ .Values.minecraft.memory }}
+            value: "{{ .Values.minecraft.memory }}"
           - name: UID
-            value: {{ .Values.minecraft.uid }}
+            value: "{{ .Values.minecraft.uid }}"
           - name: GID
-            value: {{ .Values.minecraft.gid }}
+            value: "{{ .Values.minecraft.gid }}"
           - name:  EULA
             value: 'TRUE'
           - name: MODE

@@ -4,26 +4,29 @@
 
 # ********REQUIRED********
 node:
-  hostname: 'k3s01' # Your kube node's hostname
+  hostname: 'k3s-jnb01' # Your kube node's hostname
 # ************************
 
 minecraft:
-  gamemode: 'creative'
-  motd: 'Just another §l§cMinecraft§r Server' # Message of the Day
+  memory: '4G'
   port: 25565
   node_port: 30565
-  whitelist: 'MarioCraft3000,MarioCraft5000,LouCraft2014,TechDadXYZ'
+  uid: '1001'
+  gid: '1001'
+  gamemode: 'creative'
   difficulty: 'easy'
+  motd: 'Just another §l§cMinecraft§r Server' # Message of the Day
+  whitelist: 'MarioCraft3000,MarioCraft5000,LouCraft2014,TechDadXYZ'
 
 volume:
-  storage: 10Gi
-  path: '/home/ubuntu/minecraft-data' # Path to wherever you want to save your worldfile
+  storage: 12Gi
+  path: '/home/ubuntu/minecraft-data' # Path to wherever you want to save your world-file
 
 resources:
   limits:
     memory: 6Gi
   requests:
-    memory: 4Gi
+    memory: 6Gi
 
 serviceAccount:
   create: true

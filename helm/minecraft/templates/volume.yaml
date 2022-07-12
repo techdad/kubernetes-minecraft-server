@@ -6,14 +6,14 @@ metadata:
   namespace: minecraft
 spec:
   capacity:
-    storage: 10Gi
+    storage: {{ .Values.volume.storage }}
   volumeMode: Filesystem
   accessModes:
   - ReadWriteOnce
   persistentVolumeReclaimPolicy: Delete
   storageClassName: local-storage
   local:
-    path: {{ .Values.volume.path }} 
+    path: {{ .Values.volume.path }}
   nodeAffinity:
     required:
       nodeSelectorTerms:

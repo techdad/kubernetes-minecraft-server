@@ -11,8 +11,8 @@ minecraft:
   memory: '4G'
   port: 25565
   node_port: 30565
-  uid: '1001'
-  gid: '1001'
+  uid: 1001
+  gid: 1001
   gamemode: 'creative'
   difficulty: 'easy'
   motd: 'Just another §l§cMinecraft§r Server' # Message of the Day

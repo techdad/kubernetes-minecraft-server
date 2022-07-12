@@ -11,15 +11,15 @@ minecraft:
   memory: '4G'
   port: 25565
   node_port: 30565
-  uid: 1001
-  gid: 1001
+  uid: '1001'
+  gid: '1001'
   gamemode: 'creative'
   difficulty: 'easy'
   motd: 'Just another §l§cMinecraft§r Server' # Message of the Day
   whitelist: 'MarioCraft3000,MarioCraft5000,LouCraft2014,TechDadXYZ'
 
 volume:
-  storage: 12Gi
+  storage: '12Gi'
   path: '/home/ubuntu/minecraft-data' # Path to wherever you want to save your world-file
 
 resources:

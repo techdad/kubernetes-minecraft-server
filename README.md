@@ -1,14 +1,11 @@
 Minecraft Server in Kubernetes
 ==============
 
-This demonstrates how to run Minecraft in Kubernetes. It builds on the work of 
-the [itzg Minecraft Server Docker Image](https://hub.docker.com/r/itzg/minecraft-server/) 
-to create a docker container in kubernetes.
+(forked from [solarhess/kubernetes-minecraft-server](https://github.com/solarhess/kubernetes-minecraft-server))
 
-We also use Helm to make installation, and customization, a breeze.
-
-This repository demonstrates how to run in a local kubernetes cluster using
-local disks. 
+This runs Minecraft in Kubernetes. It builds on the work of 
+the [itzg Minecraft Server Docker Image](https://hub.docker.com/r/itzg/minecraft-server/)
+to create a docker container in kubernetes. It also uses Helm for installation, and customisation.
 
 How To Install
 ------
@@ -18,7 +15,6 @@ How To Install
 * Have Helm installed
 * Have your `kubeconfig` command line set up to talk to your cluster
 * Have cluster admin privileges on this cluster
-* Clone this repository to your computer
 
 ### Step 1: Create a directory for local files
 
@@ -69,19 +65,3 @@ Now, apply the configuration to Kubernetes. `cd` to the project root and run:
 ```bash
 helm install minecraft helm/minecraft --namespace minecraft --create-namespace
 ```
-
-### Step 5: Connect
-
-Suppose that your kubernetes node has a public ip address of 192.168.1.203.
-
-If you chose option 1 in Step 3 then you do not need to specify a port when connecting to your server. For this example you would only need to connect to `192.168.1.203`.
-
-Othherwise, when you configure your minecraft server, connect to `{your external ipv4}:{the port your chose}` so for this examle if you chose port 30565 then you would connect to `192.168.1.203:30565`.
-
-
-Invitation to Help
-------
-
-Running on GKE: If anyone is interested in figuring this out the details to make this work
-on Google Cloud GKE or Azure AKS, please send me a PR.
-
